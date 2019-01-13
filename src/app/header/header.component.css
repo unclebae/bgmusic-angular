@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Staatliches');
+
+/* header */
+header {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    min-height: 200px;
+    margin-left: 20px;
+    background: url("../../assets/imgs/cover.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.logo {
+    position: relative;
+    font-family: 'Staatliches', cursive;
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.menu {
+    display: inline-block;
+    position: relative;
+    list-style: none;
+}
+
+.menu li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+.menu li a {
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Staatliches', cursive;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.menu li a:hover {
+    border: 2px solid #fff;
+}
+
+.search-form {
+    position: relative;
+}
+
+.search input[type="text"] {
+    float: left;
+    display: inline-block;
+    margin: 10px 0 0 10px;
+    width: 80% ;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.search a {
+    display: inline-block;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.search .fas.fa-search {
+    margin-top: 10px;
+    padding: 10px;
+    color: #fff;
+}
+
+/* responsible */
+@media(min-width:900px) {
+    header {
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        flex:1;
+        float: left;
+        text-align: left;
+    }
+
+    .menu {
+        flex:2;
+        float: left;
+    }
+    .search {
+        flex:1;
+        float: right;
+    }
+}

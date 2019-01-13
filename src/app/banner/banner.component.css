@@ -1,0 +1,45 @@
+/* banner */
+#banner_wrap {
+    margin-left: 20px;
+}
+
+.banner h2 {
+    border-bottom: 1px solid #666;
+    padding: 0 0 5px 0;
+    margin: 20px 0 0 0;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.banner .albums {
+    margin-top: 10px;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+.banner .albums .album {
+    position: relative;
+    padding: 10px;
+}
+
+.banner .album a {
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+}
+
+.banner .album img {
+    width: 400px;
+    height: 400px;
+}
+
+.banner .album p {
+    margin: 0;
+    display: inline-block;
+    color: white;
+    font-size: 12;
+    padding: 5px;
+}

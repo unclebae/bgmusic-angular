@@ -1,0 +1,51 @@
+/* New Songs */
+#newsong {
+    margin-left: 20px;
+    color: #fff;
+}
+
+#newsong .head {
+    border-bottom: 1px solid #666;
+    padding-bottom: 5px;
+}
+
+.newsong-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+.newsong-list .song {
+    display: flex;
+    margin: 10px 0 0 0;
+    padding: 0 10px;
+    color: #999;
+    width: 100%;
+    height: 100px;
+    align-content: flex-end;
+}
+
+.newsong-list .song img {
+    flex: 0 0 auto;
+    width: 100px;
+}
+
+.newsong-list .song .song_info {
+    margin: 0;
+    display: block;
+    padding: 10px 0 0 10px;
+    align-self: flex-end;
+}
+
+.newsong-list .song h2 {
+    margin: 0;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.newsong-list .song h3 {
+    margin:0;
+    padding: 5px 0 10px 0;
+    font-size: 14px;
+}

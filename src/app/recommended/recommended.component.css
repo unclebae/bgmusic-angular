@@ -1,0 +1,40 @@
+/* recommended */
+#recommended {
+    margin-left: 20px;
+    color: #fff;
+}
+
+#recommended .head {
+    border-bottom: 1px solid #666;
+    padding-bottom: 5px;
+}
+
+.recommended_song {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+
+.recommended_song .song {
+    display: inline-block;
+    padding: 0 10px;
+    color: #999;
+}
+
+.recommended_song .song h2 {
+    margin: 0;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.recommended_song .song h3 {
+    margin:0;
+    padding: 5px 0 10px 0;
+    font-size: 14px;
+}
+
+#recommended .song img{
+    width: 170px;
+}
