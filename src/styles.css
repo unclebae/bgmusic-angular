@@ -1,1 +1,292 @@
 /* You can add global styles to this file, and also import other style files */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Contents */
+
+
+/* @import url('https://fonts.googleapis.com/css?family=Staatliches'); */
+
+body {
+    background-color: #333;
+    height: auto;
+}
+
+/* header */
+header {
+    display: block;
+    width: 100%;
+    height: 400px;
+    /* margin-left: 20px; */
+    background: url("./assets/imgs/cover.jpg") no-repeat;
+}
+
+.logo {
+    position: relative;
+    font-family: 'Staatliches', cursive;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    margin: 0 auto;
+}
+
+.menu {
+    display: inline-block;
+    position: relative;
+    list-style: none;
+}
+
+.menu li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+.menu li a {
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Staatliches', cursive;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    margin: 0 auto;
+}
+
+.search input[type="text"] {
+    margin-top: 10px;
+    width: 85%;
+    padding: 5px;
+}
+
+.search a {
+    text-decoration: none;
+}
+
+.search .fas.fa-search {
+    margin-left: 5px;
+    color: #fff;
+}
+
+/* banner */
+#banner_wrap {
+    margin-left: 20px;
+}
+
+.banner h2 {
+    border-bottom: 1px solid #666;
+    padding: 0 0 5px 0;
+    margin: 20px 0 0 0;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.banner .albums {
+    margin-top: 10px;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+.banner .albums .album {
+    position: relative;
+    padding: 10px;
+}
+
+.banner .album a {
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+}
+
+.banner .album img {
+    width: 400px;
+    height: 400px;
+}
+
+.banner .album p {
+    margin: 0;
+    display: inline-block;
+    color: white;
+    font-size: 12;
+    padding: 5px;
+}
+
+/* recommended */
+#recommended {
+    margin-left: 20px;
+    color: #fff;
+}
+
+#recommended .head {
+    border-bottom: 1px solid #666;
+    padding-bottom: 5px;
+}
+
+.recommended_song {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+
+.recommended_song .song {
+    display: inline-block;
+    padding: 0 10px;
+    color: #999;
+}
+
+.recommended_song .song h2 {
+    margin: 0;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.recommended_song .song h3 {
+    margin:0;
+    padding: 5px 0 10px 0;
+    font-size: 14px;
+}
+
+#recommended .song img{
+    width: 170px;
+}
+
+/* New Songs */
+#newsong {
+    margin-left: 20px;
+    color: #fff;
+}
+
+#newsong .head {
+    border-bottom: 1px solid #666;
+    padding-bottom: 5px;
+}
+
+.newsong-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+.newsong-list .song {
+    display: flex;
+    margin: 10px 0 0 0;
+    padding: 0 10px;
+    color: #999;
+    width: 100%;
+    height: 100px;
+    align-content: flex-end;
+}
+
+.newsong-list .song img {
+    flex: 0 0 auto;
+    width: 100px;
+}
+
+.newsong-list .song .song_info {
+    margin: 0;
+    display: block;
+    padding: 10px 0 0 10px;
+    align-self: flex-end;
+}
+
+.newsong-list .song h2 {
+    margin: 0;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.newsong-list .song h3 {
+    margin:0;
+    padding: 5px 0 10px 0;
+    font-size: 14px;
+}
+
+/* responsible */
+@media(min-width:768px) {
+    header {
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        flex:1;
+        float: left;
+        text-align: left;
+    }
+
+    .menu {
+        flex:1;
+        float: left;
+    }
+    .search {
+        flex:1;
+        float: right;
+    }
+}
+
+/* footer  */
+footer {
+
+    border-top: 1px solid #666;
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+    font-size: 18px;
+    font-weight: 600;
+    color: #999;
+    margin: 10px auto;
+}
