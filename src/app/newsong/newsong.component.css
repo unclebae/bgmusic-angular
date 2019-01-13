@@ -5,6 +5,10 @@
 }
 
 #newsong .head {
+    font-family: Georgia,sans-serif;
+    font-size: 1.5em;
+    font-style: italic;
+    text-transform: capitalize;
     border-bottom: 1px solid #666;
     padding-bottom: 5px;
 }

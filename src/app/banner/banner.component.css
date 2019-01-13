@@ -4,6 +4,9 @@
 }
 
 .banner h2 {
+    font-family: Georgia,sans-serif;
+    font-size: 1.5em;
+    font-style: italic;
     border-bottom: 1px solid #666;
     padding: 0 0 5px 0;
     margin: 20px 0 0 0;

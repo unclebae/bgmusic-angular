@@ -15,7 +15,7 @@ header {
 .logo {
     position: relative;
     font-family: 'Staatliches', cursive;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 600;
     color: #fff;
     margin: 0 auto;
@@ -43,10 +43,16 @@ header {
     font-weight: 300;
     color: #fff;
     margin: 0 auto;
-    padding: 5px;
+    padding: 10px;
 }
 
 .menu li a:hover {
+    border: 2px solid #fff;
+    background: coral;
+}
+
+
+.menu li a:active {
     border: 2px solid #fff;
 }
 
